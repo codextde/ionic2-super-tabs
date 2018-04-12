@@ -78,7 +78,7 @@ export class SuperTabsController {
   }
 
   private getInstance(id?: string): SuperTabs {
-    return (!!id && this.instances[this.getInstanceIndex(id)]) || this.instances[0];
-  }
+		return (!!id && this.instances[this.getInstanceIndex(id)]) || this.instances[this.instances.length - 1];
+	}
 
 }
